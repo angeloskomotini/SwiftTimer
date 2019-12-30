@@ -48,7 +48,7 @@ class Utility{
         }
         else{
                     self.counterMinutes = self.counterMinutes + 1
-                    if(self.counterMinutes == 59){
+                    if((self.counterMinutes == 59) && ((seconds.text?.contains("59"))!)){
                                 self.counterMinutes = 0
                                 self.counterSeconds = 0
                                 self.fireHours(hours:hours,minutes:minutes,seconds:seconds)
